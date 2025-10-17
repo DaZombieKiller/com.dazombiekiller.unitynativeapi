@@ -6,7 +6,7 @@ namespace UnityEngine.NativeAPI
 {
     public static unsafe class UnityInterfaces
     {
-        [DllImport("UnityNativeAPI.Plugin", EntryPoint = "GetUnityInterfaces", ExactSpelling = true)]
+        [DllImport("UnityNativeAPIPlugin", EntryPoint = "GetUnityInterfaces", ExactSpelling = true)]
         private static extern IUnityInterfaces* GetUnityInterfaces();
 
         public static void Register(Guid guid, void* ptr)

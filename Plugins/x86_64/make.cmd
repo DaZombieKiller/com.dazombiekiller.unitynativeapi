@@ -1,2 +1,2 @@
 @echo off
-cl /Fe:UnityNativeAPI.Plugin.dll /O2 /LD main.c UnityNativeAPI.Plugin.def
+cl /Fe:UnityNativeAPIPlugin.dll /O2 /LD main.c UnityNativeAPIPlugin.def

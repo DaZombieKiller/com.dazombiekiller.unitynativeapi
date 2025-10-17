@@ -1,3 +1,6 @@
 *.exp
+*.exp.meta
 *.lib
+*.lib.meta
 *.obj
+*.obj.meta
