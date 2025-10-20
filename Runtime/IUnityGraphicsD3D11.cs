@@ -4,6 +4,7 @@ using TerraFX.Interop.DirectX;
 
 namespace UnityEngine.NativeAPI
 {
+    [StructLayout(LayoutKind.Sequential)]
     [Guid("AAB37EF8-7A87-D748-BF76-967F07EFB177")]
     public unsafe struct IUnityGraphicsD3D11 : IUnityInterface
     {

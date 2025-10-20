@@ -1,7 +1,9 @@
+using System.Runtime.InteropServices;
 using TerraFX.Interop.DirectX;
 
 namespace UnityEngine.NativeAPI
 {
+    [StructLayout(LayoutKind.Sequential)]
     public unsafe struct UnityGraphicsD3D12ResourceState
     {
         /// <summary>Resource to barrier.</summary>

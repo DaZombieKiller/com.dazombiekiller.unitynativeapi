@@ -1,5 +1,8 @@
+using System.Runtime.InteropServices;
+
 namespace UnityEngine.NativeAPI
 {
+    [StructLayout(LayoutKind.Sequential)]
     public struct UnityGraphicsD3D12PhysicalVideoMemoryControlValues
     {
         /// <summary>Minimum required physical memory for an application [default = 64MB].</summary>

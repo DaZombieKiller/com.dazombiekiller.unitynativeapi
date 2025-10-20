@@ -4,9 +4,8 @@ using TerraFX.Interop.DirectX;
 
 namespace UnityEngine.NativeAPI
 {
-    // IUnityGraphicsD3D12v7
-
-    [Guid("4624B0DA-41B6-4AAC-915A-ABCB9BC3F0D3")]
+    [StructLayout(LayoutKind.Sequential)]
+    [Guid("4624B0DA-41B6-4AAC-915A-ABCB9BC3F0D3")] // IUnityGraphicsD3D12v7
     public unsafe struct IUnityGraphicsD3D12 : IUnityInterface
     {
         public delegate* unmanaged[Stdcall]<ID3D12Device*> GetDevice;

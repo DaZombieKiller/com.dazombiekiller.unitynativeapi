@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 using TerraFX.Interop.Vulkan;
 
 namespace UnityEngine.NativeAPI
 {
+    [StructLayout(LayoutKind.Sequential)]
     public unsafe struct UnityVulkanBuffer
     {
         public UnityVulkanMemory memory;

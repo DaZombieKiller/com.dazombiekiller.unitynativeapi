@@ -4,9 +4,8 @@ using TerraFX.Interop.Vulkan;
 
 namespace UnityEngine.NativeAPI
 {
-    // IUnityGraphicsVulkanV2
-
-    [Guid("329334C0-9DCA-4787-B347-DD92A0097FFC")]
+    [StructLayout(LayoutKind.Sequential)]
+    [Guid("329334C0-9DCA-4787-B347-DD92A0097FFC")] // IUnityGraphicsVulkanV2
     public unsafe struct IUnityGraphicsVulkan : IUnityInterface
     {
         public delegate* unmanaged[Stdcall]<delegate* unmanaged[Stdcall]<delegate* unmanaged[Stdcall]<VkInstance, sbyte*, delegate* unmanaged[Stdcall]<void>>, void*, delegate* unmanaged[Stdcall]<VkInstance, sbyte*, delegate* unmanaged[Stdcall]<void>>>, void*, byte> InterceptInitialization;

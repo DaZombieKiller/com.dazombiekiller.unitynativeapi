@@ -2,6 +2,7 @@
 {
     public enum UnityVulkanEventRenderPassPreCondition
     {
+    #pragma warning disable CA1707 // Identifiers should not contain underscores
         /// <summary>Don't care about the state on Unity's current command buffer</summary>
         /// <remarks>This is the default precondition</remarks>
         kUnityVulkanRenderPass_DontCare,
@@ -21,5 +22,6 @@
         /// If used in combination with the SRP RenderPass API the resuls is undefined.
         /// </remarks>
         kUnityVulkanRenderPass_EnsureOutside
+    #pragma warning restore CA1707 // Identifiers should not contain underscores
     }
 }

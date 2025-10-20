@@ -2,6 +2,7 @@ namespace UnityEngine.NativeAPI
 {
     public enum UnityD3D12GraphicsQueueAccess
     {
+    #pragma warning disable CA1707 // Identifiers should not contain underscores
         /// <summary>No queue acccess, no work must be submitted to UnityD3D12Instance::graphicsQueue from the plugin event callback</summary>
         kUnityD3D12GraphicsQueueAccess_DontCare,
 
@@ -10,5 +11,6 @@ namespace UnityEngine.NativeAPI
         /// This disables access to the current Unity command buffer
         /// </summary>
         kUnityD3D12GraphicsQueueAccess_Allow,
+    #pragma warning restore CA1707 // Identifiers should not contain underscores
     }
 }

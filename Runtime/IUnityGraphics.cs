@@ -3,6 +3,7 @@ using System.Runtime.InteropServices;
 
 namespace UnityEngine.NativeAPI
 {
+    [StructLayout(LayoutKind.Sequential)]
     [Guid("7CBA0A9C-A4DD-B544-8C5A-D4926EB17B11")]
     public unsafe struct IUnityGraphics : IUnityInterface
     {

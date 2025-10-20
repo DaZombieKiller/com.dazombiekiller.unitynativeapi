@@ -1,7 +1,9 @@
-﻿using TerraFX.Interop.Vulkan;
+﻿using System.Runtime.InteropServices;
+using TerraFX.Interop.Vulkan;
 
 namespace UnityEngine.NativeAPI
 {
+    [StructLayout(LayoutKind.Sequential)]
     public unsafe struct UnityVulkanInstance
     {
         public VkPipelineCache pipelineCache;

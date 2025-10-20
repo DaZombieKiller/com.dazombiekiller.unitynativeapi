@@ -1,5 +1,8 @@
-﻿namespace UnityEngine.NativeAPI
+﻿using System.Runtime.InteropServices;
+
+namespace UnityEngine.NativeAPI
 {
+    [StructLayout(LayoutKind.Sequential)]
     public struct UnityVulkanPluginEventConfig
     {
         public UnityVulkanEventRenderPassPreCondition renderPassPrecondition;

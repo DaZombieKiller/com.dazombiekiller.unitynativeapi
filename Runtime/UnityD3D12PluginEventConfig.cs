@@ -1,5 +1,8 @@
+using System.Runtime.InteropServices;
+
 namespace UnityEngine.NativeAPI
 {
+    [StructLayout(LayoutKind.Sequential)]
     public struct UnityD3D12PluginEventConfig
     {
         public UnityD3D12GraphicsQueueAccess graphicsQueueAccess;

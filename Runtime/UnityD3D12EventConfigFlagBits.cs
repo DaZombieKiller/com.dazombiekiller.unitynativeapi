@@ -5,6 +5,7 @@ namespace UnityEngine.NativeAPI
     [Flags]
     public enum UnityD3D12EventConfigFlagBits
     {
+    #pragma warning disable CA1707 // Identifiers should not contain underscores
         /// <summary>default: (NOT SUPPORTED)</summary>
         kUnityD3D12EventConfigFlag_EnsurePreviousFrameSubmission = 1 << 0,
 
@@ -16,5 +17,6 @@ namespace UnityEngine.NativeAPI
 
         /// <summary>should be set when descriptor set bindings, vertex buffer bindings, etc are changed (default: set)</summary>
         kUnityD3D12EventConfigFlag_ModifiesCommandBuffersState = 1 << 3,
+    #pragma warning restore CA1707 // Identifiers should not contain underscores
     }
 }
